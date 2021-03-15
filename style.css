@@ -24,6 +24,11 @@
     display: flex;
     padding: 5px 0;
 }
+.header .do-not-use-above{
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-weight: 800;
+}
 .header .left{
     width: calc(100% - 298px);
     display: flex;
@@ -31,9 +36,8 @@
     justify-content: center;
     text-align: center;
 }
-.header .do-not-use-above{
-    letter-spacing: 1px;
-    word-spacing: 3px;
+.header .left .do-not-use-above{
+    font-size: 1.25rem;
 }
 .header .left h5.see-other-side{
     letter-spacing: 1px;
@@ -81,7 +85,9 @@
 }
 
 
-/* form */
+/* FORM */
+
+/* form title */
 .form_title{
     text-align: center;
     margin: 10px auto;
@@ -99,4 +105,22 @@
 .form_title h2 .dot{
     font-size: 2.3rem;
     margin-left: 2px;
+}
+
+/* form info */
+.formr_info{
+    display: flex;
+
+}
+.formr_info .right{
+    width: 150px;
+}
+.formr_info .right h3{
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: 800;
+}
+.formr_info .left{
+    width: calc(100% - 150px);
 }
