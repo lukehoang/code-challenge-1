@@ -9,6 +9,7 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Habibi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
 
     <!-- Normalize Css -->
     <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
@@ -52,16 +53,20 @@
             </div>
 
             <div class="form">
+
                 <div class="form_title">
                     <h1>BERRY SEED COMPANY</h1>
                     <h2>CLARINDA, IOWA<span class="dot">.</span></h2>
                 </div>
+
                 <div class="form_info">
                     <div class="left">
+
                         <div class="row row_date">
                             <label for="">DATE</label>
                             <input type="text" id="">
                         </div>
+
                         <div class="row row_name">
                             <label>Name</label>
                             <div class="fname">
@@ -74,13 +79,130 @@
                                 <input type="text" id="">
                             </div>
                         </div>
-                    </div>
-                    <div class="right">
-                        <div class="row">
-                            <h3>AMOUNT ENCLOSED</h3>
+
+                        <div class="row row_street">
+                            <div class="street">
+                                <label>Street&nbsp;No</label>
+                                <input type="text" id="">
+                                <span class="curly-brace">&#125;</span>
+                            </div>
+                            <div class="rfd">
+                                <label>R&nbsp;F&nbsp;D</label>
+                                <input type="text" id="">
+                            </div>
+                        </div>
+
+                        <div class="row row_post-office">
+                            <div class="post-office">
+                                <label>Post&nbsp;Office</label>
+                                <input type="text" id="">
+                            </div>
+                            <div class="box-no">
+                                <label>Box&nbsp;No</label>
+                                <input type="text" id="">
+                            </div>
+                        </div>
+
+                        <div class="row row_state">
+                            <div class="state">
+                                <label>State</label>
+                                <input type="text" id="">
+                            </div>
+                            <div class="country">
+                                <label>Country</label>
+                                <input type="text" id="">
+                            </div>
+                        </div>
+
+                        <div class="row row_ship">
+                            <div class="ship">
+                                <label>Ship&nbsp;to</label>
+                                <div>
+                                    <input type="text" id="">
+                                </div>
+                            </div>
+                            <div class="ship_state">
+                                <label>State</label>
+                                <input type="text" id="">
+                            </div>
+                        </div>
+
+
+                        <div class="row row_rallway">
+                            <div class="rallway">
+                                <label>Name&nbsp;of&nbsp;Rallway</label>
+                                <input type="text" id="">
+                            </div>
                         </div>
                     </div>
+
+                    <div class="right">
+
+                        <div class="row row_amount">
+                            <h3>AMOUNT ENCLOSED</h3>
+                        </div>
+
+                        <div class="row row_cash">
+                            <label>Cash</label>
+                            <input type="text" id="">
+                        </div>
+
+                        <div class="row row_po-order">
+                            <label>P.&nbsp;O Order</label>
+                            <input type="text" id="">
+                        </div>
+
+                        <div class="row row_express-order">
+                            <label>Express Order</label>
+                            <input type="text" id="">
+                        </div>
+
+                        <div class="row row_check">
+                            <label>Check</label>
+                            <input type="text" id="">
+                        </div>
+
+                        <div class="row row_stamps">
+                            <label>Stamps</label>
+                            <input type="text" id="">
+                        </div>
+
+                        <div class="row row_draft">
+                            <label>Draft</label>
+                            <input type="text" id="">
+                        </div>
+
+                        <div class="row row_total">
+                            <label>TOTAL</label>
+                            <input type="text" id="">
+                        </div>
+
+                    </div>
                 </div>
+                
+                <div class="row row_text">
+                    <span><span class="extra-space"></span>Is there a freight agent on this rallway at your shipping point?<input type="text" id="">If not add to your remittance to cover transportation charges.</span>
+                </div>
+
+                <p class="mark-how-to-ship text-center"><strong>Mark How to Ship</strong></p>
+
+                <div class="row row_radio">
+                    <div class="mail">
+                        <input type="radio" name="radio_ship" id="radio_mail">
+                        <label for="radio_mail"><span>[&nbsp;&nbsp;]</span>MAIL</label>
+                    </div>
+
+                    <div class="express">
+                        <input type="radio" name="radio_ship" id="radio_express">
+                        <label for="radio_express"><span>[&nbsp;&nbsp;]</span>EXPRESS</label>
+                    </div>
+
+                    <div class="freight">
+                        <input type="radio" name="radio_ship" id="radio_freight">
+                        <label for="radio_freight"><span>[&nbsp;&nbsp;]</span>FREIGHT</label>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

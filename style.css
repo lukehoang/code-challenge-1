@@ -1,14 +1,15 @@
 /* 
 WhatTheFont: Cheltenham paid font
 
-Alternative font: habibi google font
+Alternative font: Domine google font
 
 */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Habibi', serif;
+    font-family: 'Domine', serif;
+    /* font-family: 'Habibi', serif; */
     color: #2b2b2b;
 }
 .wrapper{
@@ -22,6 +23,9 @@ Alternative font: habibi google font
     background-position: center;
     height: 100vh;
     width: 100%;
+}
+.text-center{
+    text-align: center;
 }
 
 /* Header */
@@ -101,13 +105,13 @@ label{
     display: flex;
     align-items: flex-end;
     font-weight: 800;
+    margin-right: 4px;
 }
 input{
     width: 100%;
     background: transparent;
     border: none;
     border-bottom: .13rem dashed rgba(65, 65, 65, 0.85);
-    margin-left: 4px;
     padding: 1px 10px;
     transform: translateY(-3px);
     outline: none;
@@ -119,33 +123,27 @@ input{
     margin: 10px auto;
 }
 .form_title h1{
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 800;
     line-height: 1;
+    color: #3e3e3e;
 }
 .form_title h2{
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     font-weight: 800;
     line-height: 1;
+    color: #3e3e3e;
 }
 .form_title h2 .dot{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     margin-left: 2px;
+    color: #3e3e3e;
 }
 
 /* form info */
 .form_info{
     display: flex;
     justify-content: space-between;
-}
-.form_info .right{
-    width: 165px;
-}
-.form_info .right h3{
-    text-align: center;
-    letter-spacing: 1px;
-    word-spacing: 1px;
-    font-weight: 800;
 }
 
 
@@ -158,32 +156,233 @@ input{
     padding-left: 25%;
 }
 .form_info .left .row_name{
-    margin-top: 18px;
+    margin-top: 25px;
 }
 .form_info .left .row_name>div{
     position: relative;
 }
 .form_info .left .row_name .fname::after{
     content: 'First';
-    font-family: 'Habibi', serif;
-    top: calc(100% - 5px);
+    font-size: .8rem;
+    top: 100%;
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
 }
 .form_info .left .row_name .mname::after{
     content: 'Initial';
-    font-family: 'Habibi', serif;
-    top: calc(100% - 5px);
+    font-size: .8rem;
+    top: 100%;
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
 }
 .form_info .left .row_name .lname::after{
     content: 'Last';
-    font-family: 'Habibi', serif;
-    top: calc(100% - 5px);
+    font-size: .8rem;
+    top: 100%;
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
+}
+
+
+.form_info .left .row_street{
+    margin-top: 30px;
+}
+.form_info .left .street{
+    width: 70%;
+    display: flex;
+    margin-right: 25px;
+    position: relative;
+}
+.form_info .left .street .curly-brace{
+    font-family: 'Habibi', serif;
+    position: absolute;
+    right: -22px;
+    top: 19px;
+    font-size: 2.2rem;
+    color: #3e3e3e;
+}
+.form_info .left .rfd{
+    width: 30%;
+    display: flex;
+}
+
+
+
+.form_info .left .row_post-office{
+    margin-top: 20px;
+}
+.form_info .left .post-office{
+    width: 70%;
+    display: flex;
+    margin-right: 25px;
+}
+.form_info .left .box-no{
+    width: 30%;
+    display: flex;
+}
+
+
+.form_info .left .row_state{
+    margin-top: 20px;
+}
+.form_info .left .state{
+    width: 55%;
+    display: flex;
+    margin-right: 5px;
+}
+.form_info .left .country{
+    width: 45%;
+    display: flex;
+}
+
+
+
+.form_info .left .row_ship{
+    margin-top: 20px;
+}
+.form_info .left .ship{
+    width: 68%;
+    display: flex;
+    margin-right: 5px;
+}
+.form_info .left .ship>div{
+    position: relative;
+    width: 100%;
+}
+.form_info .left .ship>div::after{
+    content: '(Town to which shipment is to go)';
+    font-size: .8rem;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.form_info .left .ship_state{
+    width: 32%;
+    display: flex;
+}
+
+
+.form_info .left .row_rallway{
+    margin-top: 20px;
+}
+.form_info .left .rallway{
+    width: 100%;
+    display: flex;
+    margin-right: 5px;
+}
+
+
+
+
+
+/* Right */
+.form_info .right{
+    width: 165px;
+}
+.form_info .right h3{
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.form_info .right .row_amount{
+    margin-top: 5px;
+}
+
+
+.form_info .right .row_cash{
+    margin-top: 12px;
+    width: 100%;
+    display: flex;
+    margin-right: 5px;
+}
+
+.form_info .right .row_po-order{
+    margin-top: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 5px;
+}
+.form_info .right .row_po-order>label{
+    line-height: 1;
+}
+
+.form_info .right .row_express-order{
+    margin-top: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 5px;
+}
+.form_info .right .row_express-order>label{
+    line-height: 1;
+}
+
+.form_info .right .row_check,
+.form_info .right .row_stamps,
+.form_info .right .row_draft,
+.form_info .right .row_total{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    margin-right: 5px;
+}
+
+.row_text{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    margin-right: 5px;
+}
+.row_text input{
+    width: 40px;
+    padding: 1px 5px;
+}
+.row_text .extra-space{
+    margin-left: 28px;
+}
+
+.mark-how-to-ship{
+    margin-top: 15px;
+}
+
+
+.row_radio{
+    padding: 20px 0;
+    justify-content: space-evenly;
+}
+.row_radio>div{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.row_radio>div>input{
+   display: none;
+}
+.row_radio>div>label{
+    font-weight: 400;
+    cursor: pointer;
+ }
+.row_radio>div>label>span{
+    margin-right: 10px;
+    position: relative;
+}
+.row_radio>div>label>span::after{
+    content: 'x';
+    position: absolute;
+    left: 5px;
+    top: -1px;
+    visibility: hidden;
+}
+.row_radio>div>input:checked+label>span::after{
+    visibility: visible;
 }
