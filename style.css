@@ -1,3 +1,9 @@
+/* 
+WhatTheFont: Cheltenham paid font
+
+Alternative font: habibi google font
+
+*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -94,17 +100,18 @@
 label{
     display: flex;
     align-items: flex-end;
+    font-weight: 800;
 }
 input{
     width: 100%;
     background: transparent;
     border: none;
-    border-bottom: .13rem dotted #2b2b2b;
-    margin-left: 3px;
+    border-bottom: .13rem dashed rgba(65, 65, 65, 0.85);
+    margin-left: 4px;
     padding: 1px 10px;
     transform: translateY(-3px);
     outline: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 /* form title */
 .form_title{
@@ -146,8 +153,37 @@ input{
 .form_info .left{
     width: calc(100% - 190px);
 }
-.form_info .left .row:first-child{
+.form_info .left .row_date{
     margin-top: 18px;
-    margin-left: 20px;
     padding-left: 25%;
+}
+.form_info .left .row_name{
+    margin-top: 18px;
+}
+.form_info .left .row_name>div{
+    position: relative;
+}
+.form_info .left .row_name .fname::after{
+    content: 'First';
+    font-family: 'Habibi', serif;
+    top: calc(100% - 5px);
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.form_info .left .row_name .mname::after{
+    content: 'Initial';
+    font-family: 'Habibi', serif;
+    top: calc(100% - 5px);
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.form_info .left .row_name .lname::after{
+    content: 'Last';
+    font-family: 'Habibi', serif;
+    top: calc(100% - 5px);
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
 }
