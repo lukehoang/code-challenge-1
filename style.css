@@ -37,7 +37,7 @@ Alternative font: Domine google font
     font-weight: 800;
 }
 .header .left{
-    width: calc(100% - 298px);
+    width: calc(100% - 285px);
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -51,7 +51,7 @@ Alternative font: Domine google font
     word-spacing: 3px;
 }
 .header .right{
-    width: 298px;
+    width: 285px;
     display: flex;
     flex-direction: column;
 }
