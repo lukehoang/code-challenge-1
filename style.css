@@ -1,15 +1,13 @@
 /* 
 WhatTheFont: Cheltenham paid font
-
 Alternative font: Domine google font
-
 */
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Domine', serif;
-    /* font-family: 'Habibi', serif; */
     color: #2b2b2b;
 }
 .wrapper{
@@ -21,7 +19,6 @@ Alternative font: Domine google font
     padding: 35px 25px;
     background-size: cover;
     background-position: center;
-    height: 100vh;
     width: 100%;
 }
 .text-center{
@@ -36,7 +33,7 @@ Alternative font: Domine google font
 }
 .header .do-not-use-above{
     letter-spacing: 1px;
-    word-spacing: 3px;
+    word-spacing: 2px;
     font-weight: 800;
 }
 .header .left{
@@ -61,6 +58,9 @@ Alternative font: Domine google font
 .header .right .table-container{
     display: flex;
     margin-bottom: 2px;
+}
+.header .right .do-not-use-above{
+    text-align: center;
 }
 .header .right ul{
     list-style: none;
@@ -396,4 +396,220 @@ input:-webkit-autofill {
 }
 .row_radio>div>input:checked+label>span::after{
     visibility: visible;
+}
+
+
+
+/* Table */
+table, th, td {
+    /* border: 1px solid black; */
+}
+table {
+    position: relative;
+    /* border-top: 1px solid #2b2b2b; */
+}
+table::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    width: 100%;
+    height: 2px;
+    border-top: 1px solid rgba(65, 65, 65, 0.85);
+    border-bottom: 1px solid rgba(65, 65, 65, 0.85);
+}
+table::after{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid rgba(65, 65, 65, 0.85);
+}
+table thead>tr>th,
+table tbody>tr>td{
+    position: relative;
+    margin: 0 1px;
+    font-weight: 400;
+}
+table thead>tr>th::after,
+table tbody>tr>td::after{
+    content: '';
+    position: absolute;
+    height: 112%;
+    width: 1px;
+    background: #2b2b2b;
+    right: 0;
+    top: 0;
+}
+table tbody>tr:last-child>td::after{
+    height: 87%;
+}
+table thead>tr>th:last-child:after,
+table tbody>tr>td:last-child::after{
+    display: none;
+}
+table thead>tr>th:first-child{
+    width: 100px;
+}
+table thead>tr>th:nth-child(2){
+    width: 50px;
+}
+table thead>tr>th:nth-child(3){
+    width: 55%;
+}
+table thead>tr>th:nth-child(4){
+    width: 30px;
+}
+table thead>tr>th:nth-child(5){
+    width: 30px;
+}
+
+table input{
+    width: calc(100% - 4px);
+    margin-left: 1px;
+    border-bottom: 1px solid rgba(65, 65, 65, 0.85);
+    height: 40px;
+    line-height: 1;
+}
+table tbody>tr:first-child>td input{
+    border-top: 1px solid rgba(65, 65, 65, 0.85);
+}
+table tbody>tr:last-child>td input{
+    border-bottom: none;
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 992px){
+    .header .left h5.see-other-side {
+        word-spacing: 1px;
+    }
+}
+
+@media (max-width: 767px){
+    .header .do-not-use-above,
+    .header .left .do-not-use-above {
+        font-size: 1.1rem;
+    }
+    .header .left h5.see-other-side {
+        word-spacing: 1px;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .form_title h1 {
+        font-size: 2.5rem;
+    }
+    .form_title h2 {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 650px){
+    .container {
+        padding: 35px 15px;
+    }
+    .header {
+        flex-direction: column-reverse;
+    }
+    .header .left{
+        width: 100%;
+    }
+    .header .left .do-not-use-above {
+        display: none;
+    }
+    .header .left h5.see-other-side {
+        font-size: .6rem;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .header .right {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+
+    .form_title h1 {
+        font-size: 2rem;
+    }
+    .form_title h2 {
+        font-size: 1.7rem;
+        line-height: .5;
+    }
+    .form_title h2 .dot {
+        font-size: 2rem;
+    }
+
+    .form_info {
+        flex-direction: column;
+    }
+    .form_info .left,
+    .form_info .right {
+        width: 100%;
+    }
+    .form_info .left .row_date {
+        padding-left: 0;
+    }
+
+    .form_info .right .row{
+        margin-top: 20px;
+    }
+    .form_info .right .row_amount {
+        margin-top: 50px;
+    }
+
+    .form_info .right .row_po-order,
+    .form_info .right .row_express-order {
+        align-items: flex-end;
+        text-align: left;
+        margin-right: 0;
+    }
+    .form_info .right .row_po-order>label {
+        width: 100px;
+    }
+    .form_info .right .row_express-order>label {
+        width: 162px;
+    }
+    .row_text .extra-space {
+        display: none;
+    }
+
+
+    table thead>tr>th, table tbody>tr>td {
+        font-size: .9rem;
+    }
+    table thead>tr>th:nth-child(2) {
+        width: 70px;
+    }
+    table thead>tr>th:nth-child(3) {
+        width: 45%;
+    }
+    table thead>tr>th:nth-child(4) {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px){
+    .form_title h1 {
+        font-size: 1.7rem;
+    }
+    .form_title h2 {
+        font-size: 1.4rem;
+        line-height: .5;
+    }
+    .form_info .left .row_rallway {
+        margin-top: 40px;
+    }
+    .form_info .left .ship {
+        width: 71%;
+    }
+    .form_info .left .ship_state {
+        width: 29%;
+    }
+    table thead>tr>th:nth-child(3) {
+        width: 35%;
+    }
 }
